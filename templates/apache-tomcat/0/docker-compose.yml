@@ -5,5 +5,5 @@ tomcat:
   volumes:
    - /usr/local/:/usr/local/
   environment:
-   - RUN_COMMAND=catalina.sh jpda run
+   - RUN_COMMAND=/usr/local/tomcat/bin/catalina.sh  run
    - CATALINA_HEAP=-server -Xmx768m -Xmn100m -Xms768m
