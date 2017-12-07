@@ -1,8 +1,9 @@
-name: tomcat
+name: Traefik
 description: |
-  Apache Tomcat 7.0.82
-version: 1.0
-category: Java
-maintainer: 2082307@qq.com
-license: Apache
-projectURL: # A URL related to the catalog entry
+  (Experimental) Traefik active load balancer
+version: v1.3.6-rancher1
+category: Load Balancing
+maintainer: "Raul Sanchez <rawmind@gmail.com>"
+minimum_rancher_version: v0.59.0
+license:
+projectURL: https://github.com/rawmind0/alpine-traefik
