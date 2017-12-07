@@ -1,0 +1,15 @@
+tomcat:
+  image: "tomcat:latest"
+  ports:
+   - 8088:8080
+  volumes:
+   - ./confs:/data1/confs
+   - ./web/webapps:/data1/xxx/webapps
+   - ./authconfs:/data1/authconfs
+   - ./web/logs:/data1/xxx/logs
+  environment:
+   - NAME_CONF=test-yf=/data1/xxx/bin/./
+   - RUN_COMMAND=catalina.sh jpda run
+   - JMX_PORT=44445
+   - JMX_HOST=10.77.6.164
+   - CATALINA_HEAP=-server -Xmx768m -Xmn100m -Xms768m
