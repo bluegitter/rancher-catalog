@@ -1,7 +1,7 @@
 tomcat:
   image: "tomcat:7.0.82-jre7"
   ports:
-   - 8088:8080
+   - ${http_port}:8080
   volumes:
    - /usr/local/:/usr/local/
   environment:

@@ -4,4 +4,10 @@
   description: # Description of the versioned template of the Catalog Entry
   uuid: tomcat-0
   minimum_rancher_version: # The minimum version of Rancher that supports the template
-  questions: #Used to request user input for configuration options
+    questions:
+    - variable: "http_port"
+      description: "tomcat http public port to listen."
+      label: "Http port:"
+      required: true
+      default: 8080
+      type: "int"
