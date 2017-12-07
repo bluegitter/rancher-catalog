@@ -1,5 +1,5 @@
 tomcat:
-  image: "tomcat:7.0.82-jre7"
+  image: "tomcat:7.0.82-jre7-alpine"
   ports:
    - ${http_port}:8080
   volumes:
